@@ -1,0 +1,102 @@
+Application:
+●	Variables dropped as it contains more than 50% missing data:
+○	OWN_CAR_AGE
+○	EXT_SOURCE_1
+○	EXT_SOURCE_3
+○	'APARTMENTS_AVG'
+○	'BASEMENTAREA_AVG’
+○	YEARS_BEGINEXPLUATATION_AVG
+○	'YEARS_BUILD_AVG
+○	COMMONAREA_AVG
+○	'ELEVATORS_AVG'
+○	'ENTRANCES_AVG'
+○	'FLOORSMIN_AVG'
+○	'FLOORSMAX_AVG'
+○	'LANDAREA_AVG'
+○	'LIVINGAPARTMENTS_AVG'
+○	'LIVINGAREA_AVG'
+○	'NONLIVINGAPARTMENTS_AVG'
+○	'NONLIVINGAREA_AVG'
+○	APARTMENTS_MODE
+○	BASEMENTAREA_MODE
+○	YEARS_BEGINEXPLUATATION_MODE
+○	'YEARS_BUILD_MODE'
+○	COMMONAREA_MODE
+○	'ELEVATORS_MODE'
+○	'ENTRANCES_MODE'
+○	FLOORSMAX_MODE
+○	FLOORSMIN_MODE'
+○	LIVINGAPARTMENTS_MODE
+○	LIVINGAREA_MODE
+○	NONLIVINGAPARTMENTS_MODE
+○	 'NONLIVINGAREA_MODE'
+○	'NONLIVINGAREA_MODE'
+○	'APARTMENTS_MEDI'
+○	'BASEMENTAREA_MEDI'
+○	YEARS_BEGINEXPLUATATION_MEDI
+○	'YEARS_BUILD_MEDI'
+○	'ELEVATORS_MEDI'
+○	'ENTRANCES_MEDI'
+○	FLOORSMAX_MEDI
+○	'FLOORSMIN_MEDI'
+○	'LANDAREA_MEDI'
+○	'LIVINGAPARTMENTS_MEDI'
+○	'LIVINGAREA_MEDI
+○	NONLIVINGAPARTMENTS_MEDI
+○	NONLIVINGAREA_MEDI
+○	FONDKAPREMONT_MODE'
+○	HOUSETYPE_MODE
+○	TOTALAREA_MODE
+○	WALLSMATERIAL_MODE'
+○	'EMERGENCYSTATE_MODE'
+
+●	Variables dropped as it had constant data:
+○	FLAG_MOBIL
+
+●	Missing value in these variables were replaced with mean as the data are stored in a continuous distribution:
+○	'AMT_ANNUITY', 'AMT_GOODS_PRICE', 'EXT_SOURCE_2',
+ 'OBS_30_CNT_SOCIAL_CIRCLE', 'DEF_30_CNT_SOCIAL_CIRCLE',
+'OBS_60_CNT_SOCIAL_CIRCLE', 'DEF_60_CNT_SOCIAL_CIRCLE',
+'DAYS_LAST_PHONE_CHANGE', 'AMT_REQ_CREDIT_BUREAU_HOUR',
+ 'AMT_REQ_CREDIT_BUREAU_DAY', 'AMT_REQ_CREDIT_BUREAU_WEEK',
+ 'AMT_REQ_CREDIT_BUREAU_MON', 'AMT_REQ_CREDIT_BUREAU_QRT',
+ 'AMT_REQ_CREDIT_BUREAU_YEAR'
+
+●	Missing values replaced with most frequent observation for categorical variables:
+○	NAME_TYPE_SUITE',  'OCCUPATION_TYPE', 
+
+
+
+Bureau Balance:
+●	No Missing variables - Following variables are removed due to the them not being significant for analysis:
+○	 ‘MONTHS_BALANCE’
+
+
+Bureau:
+●	No Missing variables - Following variables are removed due to the them not being significant for analysis:
+○	CREDIT_CURRENCY, DAYS_CREDIT,'CREDIT_DAY_OVERDUE',
+'DAYS_CREDIT_ENDDATE', 'DAYS_ENDDATE_FACT', 'DAYS_CREDIT_UPDATE', 'AMT_ANNUITY', ‘STATUS_0’
+●	Missing value in these variables were replaced with mean as the data are stored in a continuous distribution:
+○	CREDIT_ACTIVE, AMT_CREDIT_SUM, AMT_CREDIT_SUM_DEBT, AMT_CREDIT_SUM_LIMIT, AMT_CREDIT_SUM_OVERDUE, CREDIT_TYPE_CREDIT_CARD, CREDIT_TYPE_CONSUMER_CREDIT, AMT_CREDIT_MAX_OVERDUE, CNT_CREDIT_PROLONG
+
+Installments_payments:
+
+●	Missing values replaced with most frequent observation for categorical variables:
+○	AMT_PAYMENT_GREATER_EQUAL_INSTALMENT
+
+●	Variables dropped as it contains more than 50% missing data:
+○	'DAYS_ENTRY_PAYMENT', 'AMT_PAYMENT'
+
+
+Credit_card_balance
+●	Imbalanced variable (mostly contain 0) kept for now:
+○	'AMT_DRAWINGS_ATM_CURRENT', 'AMT_DRAWINGS_CURRENT',
+ 'AMT_DRAWINGS_OTHER_CURRENT', 'AMT_DRAWINGS_POS_CURRENT',
+  'AMT_RECIVABLE', 'AMT_TOTAL_RECEIVABLE'
+
+
+
+
+POS_CASH_balance:
+●	Imbalanced variable (mostly contain 0) kept for now:
+○	'SK_DPD', 'CNT_INSTALMENT_FUTURE'
